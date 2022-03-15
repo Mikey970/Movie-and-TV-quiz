@@ -1,8 +1,9 @@
 .questionHeader {
   text-align: center;
+  font-family: "Condensed", sans-serif;
 }
 body {
-  background-image: url(img/ocean.jpg);
+  background-image: url(img/grayscaleocean.webp);
   background-size: cover;
 }
 .photo {
@@ -15,39 +16,45 @@ body {
   border-radius: 20px;
 }
 .choiceBox {
-  width: 40%;
+  width: 50%;
   height: 40%;
-  margin-left: 29%;
+  margin-left: 25%;
   padding-bottom: 2%;
   border: 5px black solid;
   border-radius: 18px;
-  background-color: lightblue;
+  background-color: rgb(21, 22, 22);
 }
 .mainQuestion {
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+  color: white;
 }
 
 .multipleChoice {
-  font-size: small;
+  display: block;
+  font-size: medium;
+  background-color: cornflowerblue;
   border: 2px solid black;
   border-radius: 18px;
+  box-shadow: black;
+  width: 100%;
 }
 h2 {
   text-align: center;
 }
 .first2 {
   text-align: center;
-  padding-bottom: 5%;
 }
 #button1 {
+  padding-left: 10%;
   padding: 4%;
 }
 #button2 {
   padding: 4%;
-  max-width: 30%;
 }
 #button3 {
   padding: 4%;

@@ -59,10 +59,10 @@ function changePage() {
     headerNumber.innerHTML = "Question 5";
     question.innerHTML = "This Animal has the ability to regenerate almost any part of its body, Including the front of its brain. Can you guess it's name?"
     photoContainer.src = "img/axo.jpg"
-    button1.innerHTML = "Axolotl"
+    button1.innerHTML = "The Axolotl"
     button2.innerHTML ="Zeus Lizard"
     button3.innerHTML = "Fire Salamander"
-    button4.innerHTML = "A Siren"
+    button4.innerHTML = "The Siren"
     if (event.target.innerText == "Zeus Lizard") { alert("right answer"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }
