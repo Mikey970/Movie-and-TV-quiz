@@ -1,5 +1,5 @@
 let photoContainer = document.querySelector(".photo")
-photoContainer.src = "img/batfish.jpeg"
+photoContainer.src = "img/breakingbad.jpg"
 let headerNumber = document.querySelector(".questionHeader") 
 let question = document.querySelector(".mainQuestion")
 let button1 = document.querySelector("#button1")
@@ -23,47 +23,57 @@ function changePage() {
   if (currentQuestion == 1) {
     
     headerNumber.innerHTML = "Question 2";
-    question.innerHTML = "This endangered species of Lemur is found in the rainforests of madagascar. Its know for knocking on trees to find the hollow points. Do you know it's name?"
-    photoContainer.src = "img/ayeaye.jpg"
-    button1.innerHTML = "The Aye-Aye"
-    button2.innerHTML = "The Mandrill"
-    button3.innerHTML = "A Tarsier"
-    button4.innerHTML = "Emperor Tamarins"
-    if (event.target.innerText == "A Tarsier") { alert("right answer"); score += 10}
+    question.innerHTML = "In 2008's The Incredible Hulk, which actor played Bruce Banner before the role was recasted?"
+    photoContainer.src = "img/hulk.jpg"
+    button1.innerHTML = "Ed Norton"
+    button2.innerHTML = "Paul Rudd"
+    button3.innerHTML = "Vin Diesel"
+    button4.innerHTML = "Andrew Garfield"
+    if (event.target.innerText == "Vin Diesel") { alert("right answer"); score += 10}
     currentQuestion - 1
     scoreCard.innerHTML = `Score: ${score}`
     
     
   }else if (currentQuestion === 2) {
     headerNumber.innerHTML = "Question 3";
-    question.innerHTML = "This animal is the most endangered species on the planet. As of 2019 only 9 were believed to be left. Do you know this animal?"
-    photoContainer.src = "img/vaquita.jpg"
-    button1.innerHTML = "The Amazon River Dolphin"
-    button2.innerHTML ="Hector's Dolphin"
-    button3.innerHTML = "The Sei Whale"
-    button4.innerHTML = "The Vaquita"
-    if (event.target.innerText == "The Amazon River Dolphin") { alert("right answer"); score+=10 }
+    question.innerHTML = "In the Star Wars movies, how many suns does Tatooine have?"
+    photoContainer.src = "img/tt.jpeg"
+    button1.innerHTML = "3 Suns"
+    button2.innerHTML ="4 Suns"
+    button3.innerHTML = "1 Sun"
+    button4.innerHTML = "2 Suns"
+    if (event.target.innerText == "3 Suns") { alert("right answer"); score+=10 }
     scoreCard.innerHTML = `Score: ${score}`
   
   } else if (currentQuestion === 3) {
     headerNumber.innerHTML = "Question 4";
-    question.innerHTML = "This sea slug may look cool, but don't go near it. Capable of stealing venom from the Man-O-War jellyfish you do not want to get stung by this thing. This animals nickname is..."
-    photoContainer.src = "img/bluedragon.jpg"
-    button1.innerHTML = "The Blue Kirby"
-    button2.innerHTML ="The Blue Dragon"
-    button3.innerHTML = "Blue Sea Hare"
-    button4.innerHTML = "Blue Rayed Limpet"
-    if (event.target.innerText == "Blue Rayed Limpet") { alert("right answer"); score += 10 }
+    question.innerHTML = "It started with street racing and somehow made it's way to space. How many Fast and Furious Movies have been made?"
+    photoContainer.src = "img/ff.jpg"
+    button1.innerHTML = "7 Movies"
+    button2.innerHTML ="10 Movies"
+    button3.innerHTML = "9 Movies"
+    button4.innerHTML = "14 Movies"
+    if (event.target.innerText == "14 Movies") { alert("right answer"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 4) {
     headerNumber.innerHTML = "Question 5";
-    question.innerHTML = "This Animal has the ability to regenerate almost any part of its body, Including the front of its brain. Can you guess it's name?"
-    photoContainer.src = "img/axo.jpg"
-    button1.innerHTML = "The Axolotl"
-    button2.innerHTML ="Zeus Lizard"
-    button3.innerHTML = "Fire Salamander"
-    button4.innerHTML = "The Siren"
-    if (event.target.innerText == "Zeus Lizard") { alert("right answer"); score += 10 }
+    question.innerHTML = "This South Park character had died over 100 times throughout the show. Which character is it?"
+    photoContainer.src = "img/sp.jpg.webp"
+    button1.innerHTML = "Kyle"
+    button2.innerHTML ="Cartman"
+    button3.innerHTML = "Kenny"
+    button4.innerHTML = "Towelie"
+    if (event.target.innerText == "Cartman") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 5) {
+    headerNumber.innerHTML = "Question 6";
+    question.innerHTML = "What is the name of Laurence Fishburne's character in the matrix?"
+    photoContainer.src = "img/Morpheus.jpg"
+    button1.innerHTML = "The Oracle"
+    button2.innerHTML ="Morpheus"
+    button3.innerHTML = "Neo"
+    button4.innerHTML = "Cypher"
+    if (event.target.innerText == "Neo") { alert("right answer"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }
   
