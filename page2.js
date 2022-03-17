@@ -1,6 +1,5 @@
 
 let photoContainer = document.querySelector(".photo")
-
 let headerNumber = document.querySelector(".questionHeader") 
 let question = document.querySelector(".mainQuestion")
 let button1 = document.querySelector("#button1")
@@ -13,7 +12,7 @@ let correctAnswer1 = "The Red-Lipped Batfish"
 let scoreCard = document.querySelector(".scorecard")
 let finalScore = document.querySelector(".finalScore")
 let choiceBox = document.querySelector(".choiceBox")
-photoContainer.src = "img/breakingbad.jpg"
+photoContainer.src = "img/breakingbad.JPG"
 
 button1.addEventListener("click", changePage)
 button2.addEventListener("click", changePage)
@@ -33,7 +32,7 @@ function changePage() {
     button2.innerHTML = "Paul Rudd"
     button3.innerHTML = "Vin Diesel"
     button4.innerHTML = "Andrew Garfield"
-    
+
     if (event.target.innerText == "Vin Diesel") { alert("right answer"); score += 10}
     currentQuestion - 1
     scoreCard.innerHTML = `Score: ${score}`
