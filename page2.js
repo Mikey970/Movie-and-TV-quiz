@@ -10,6 +10,7 @@ let score = 0;
 let currentQuestion = 1;
 let correctAnswer1 = "The Red-Lipped Batfish"
 let scoreCard = document.querySelector(".scorecard")
+
 button1.addEventListener("click", changePage)
 button2.addEventListener("click", changePage)
 button3.addEventListener("click", changePage)
@@ -74,6 +75,56 @@ function changePage() {
     button3.innerHTML = "Neo"
     button4.innerHTML = "Cypher"
     if (event.target.innerText == "Neo") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 6) {
+    headerNumber.innerHTML = "Question 7";
+    question.innerHTML = "What is the highest grossing movie of all time?"
+    photoContainer.src = "img/office.jpeg"
+    button1.innerHTML = "Avengers: Endgame"
+    button2.innerHTML ="The Titanic"
+    button3.innerHTML = "Avatar"
+    button4.innerHTML = "Star Wars: Episode VII"
+    if (event.target.innerText == "The Titanic") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 7) {
+    headerNumber.innerHTML = "Question 8";
+    question.innerHTML = "In The Shining, what was the name of the hotel in the movie?"
+    photoContainer.src = "img/hotel.jpeg"
+    button1.innerHTML = "The Overlook"
+    button2.innerHTML ="The Estes Hotel"
+    button3.innerHTML = "The Stan Hotel"
+    button4.innerHTML = "The Shining Hotel"
+    if (event.target.innerText == "The Stan Hotel") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 8) {
+    headerNumber.innerHTML = "Question 9";
+    question.innerHTML = "How many seasons of The Sopranos aired on HBO?"
+    photoContainer.src = "img/sopranos.jpeg"
+    button1.innerHTML = "4 Seasons "
+    button2.innerHTML ="5 Seasons"
+    button3.innerHTML = "6 Seasons"
+    button4.innerHTML = "7 Seasons"
+    if (event.target.innerText == "4 Seasons") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 9) {
+    headerNumber.innerHTML = "Question 10";
+    question.innerHTML = "In the John Wick Movies, what is the name of the hotel chain that is known as a safehaven for Hitmen? "
+    photoContainer.src = "img/wick.jpeg"
+    button1.innerHTML = "The Hilton"
+    button2.innerHTML ="The Haven"
+    button3.innerHTML = "The Continental"
+    button4.innerHTML = "The Underground"
+    if (event.target.innerText == "The Continental") { alert("right answer"); score += 10 }
+    scoreCard.innerHTML = `Score: ${score}`
+  }else if (currentQuestion === 10) {
+    headerNumber.innerHTML = "Question 11";
+    question.innerHTML = "Test questions"
+    photoContainer.src = "img/sopranos.jpeg"
+    button1.innerHTML = "test "
+    button2.innerHTML ="test"
+    button3.innerHTML = "test3"
+    button4.innerHTML = "test4"
+    if (event.target.innerText == "test3") { alert("right answer"); score += 10; currentQuestion = 12}
     scoreCard.innerHTML = `Score: ${score}`
   }
   
