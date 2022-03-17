@@ -1,0 +1,21 @@
+body {
+  background-image: url(img/moviechar.jpeg);
+  background-size: cover;
+  background-position: center bottom 70%;
+}
+.container {
+}
+.finalScore {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+.scorebox {
+  margin-left: 31%;
+  border-radius: 18px;
+  background-color: black;
+  width: 40%;
+  height: 40%;
+  padding-bottom: 40%;
+}

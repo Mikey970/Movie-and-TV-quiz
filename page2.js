@@ -1,5 +1,6 @@
+
 let photoContainer = document.querySelector(".photo")
-photoContainer.src = "img/breakingbad.jpg"
+
 let headerNumber = document.querySelector(".questionHeader") 
 let question = document.querySelector(".mainQuestion")
 let button1 = document.querySelector("#button1")
@@ -10,13 +11,14 @@ let score = 0;
 let currentQuestion = 1;
 let correctAnswer1 = "The Red-Lipped Batfish"
 let scoreCard = document.querySelector(".scorecard")
+let finalScore = document.querySelector(".finalScore")
+let choiceBox = document.querySelector(".choiceBox")
+photoContainer.src = "img/breakingbad.jpg"
 
 button1.addEventListener("click", changePage)
 button2.addEventListener("click", changePage)
 button3.addEventListener("click", changePage)
 button4.addEventListener("click", changePage)
-
-
 
 
 
@@ -107,26 +109,36 @@ function changePage() {
     if (event.target.innerText == "4 Seasons") { alert("right answer"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 9) {
-    headerNumber.innerHTML = "Question 10";
-    question.innerHTML = "In the John Wick Movies, what is the name of the hotel chain that is known as a safehaven for Hitmen? "
-    photoContainer.src = "img/wick.jpeg"
-    button1.innerHTML = "The Hilton"
-    button2.innerHTML ="The Haven"
-    button3.innerHTML = "The Continental"
+      headerNumber.innerHTML = "Question 10";
+      question.innerHTML = "In the John Wick Movies, what is the name of the hotel chain that is known as a safehaven for Hitmen? "
+      photoContainer.src = "img/wick.jpeg"
+      button1.innerHTML = "The Hilton"
+      button2.innerHTML ="The Haven"
+      button3.innerHTML = "The Continental"
     button4.innerHTML = "The Underground"
-    if (event.target.innerText == "The Continental") { alert("right answer"); score += 10 }
+    
+      if (event.target.innerText == "The Continental") { alert("right answer"); score += 10; }
+      scoreCard.innerHTML = `Score: ${score}`
+  } else if (currentQuestion === 10) {
+      button1.style.display = 'none'
+      button2.style.display = 'none'
+      button3.style.display = 'none'
+      button4.style.display = 'none'
+      
+      
+      headerNumber.innerHTML = "";
+    
+      button1.innerHTML = "test "
+      button2.innerHTML ="test"
+      button3.innerHTML = "test3"
+      button4.innerHTML = "test4"
+      if (event.target.innerText == "test3") { alert("right answer"); score += 10; }
     scoreCard.innerHTML = `Score: ${score}`
-  }else if (currentQuestion === 10) {
-    headerNumber.innerHTML = "Question 11";
-    question.innerHTML = "Test questions"
-    photoContainer.src = "img/sopranos.jpeg"
-    button1.innerHTML = "test "
-    button2.innerHTML ="test"
-    button3.innerHTML = "test3"
-    button4.innerHTML = "test4"
-    if (event.target.innerText == "test3") { alert("right answer"); score += 10; currentQuestion = 12}
-    scoreCard.innerHTML = `Score: ${score}`
-  }
+      
+    if (score < 50) { question.innerHTML = `Ouch! You scored ${score} , Go home and watch some Netflix`; photoContainer.src = "img/tuff.gif"}
+    if (score >= 50 && score < 80) { question.innerHTML = `Ok! You kinda know your stuff. You scored ${score}.`; photoContainer.src = "img/notbad.gif" }
+    if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
+  } 
   
   console.log(score)
   currentQuestion++
