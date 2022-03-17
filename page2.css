@@ -78,6 +78,9 @@ h2 {
   }
 }
 @media screen and (max-width: 700px) {
+  .multipleChoice {
+    color: white;
+  }
   .mainQuestion {
     font-size: medium;
   }
