@@ -1,7 +1,9 @@
 .questionHeader {
   text-align: center;
   font-family: "Condensed", sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
+
 body {
   background-image: url(img/moviechar.jpeg);
   background-size: cover;
@@ -27,7 +29,7 @@ body {
   background-color: rgb(21, 22, 22);
 }
 .mainQuestion {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: x-large;
   padding-left: 5%;
   padding-right: 5%;
@@ -73,5 +75,25 @@ h2 {
     background-color: black;
     color: white;
     box-shadow: 2px 2px 4px 1px cornflowerblue;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainQuestion {
+    font-size: medium;
+  }
+  body {
+    background-size: auto;
+    background-position: center top 1px;
+    background-repeat: no-repeat;
+  }
+  .photo {
+    height: 45%;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .choiceBox {
+    margin-left: 15%;
+    width: 70%;
+    height: 90%;
   }
 }
