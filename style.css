@@ -1,21 +1,29 @@
 .title {
   text-align: center;
   color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bolder;
+}
+.titleContainer {
+  margin-top: 25%;
 }
 body {
-  background-image: url(img/monkeyimage.jpg);
+  background-image: url(img/moviechar.jpeg);
   background-size: cover;
 }
-
+#topHeader {
+  margin-top: -10%;
+  font-size: 15vh;
+  border-bottom: 2px solid white;
+}
 .ready {
   text-align: center;
 }
 .readybutton {
   background-color: black;
   color: white;
-  width: 300px;
-  height: 50px;
+  width: 30%;
+  height: 50%;
   border-radius: 10%;
   font-size: larger;
 }

@@ -36,7 +36,6 @@ function changePage() {
     currentQuestion - 1
     scoreCard.innerHTML = `Score: ${score}`
     
-    
   }else if (currentQuestion === 2) {
     headerNumber.innerHTML = "Question 3";
     question.innerHTML = "In the Star Wars movies, how many suns does Tatooine have?"
@@ -120,6 +119,7 @@ function changePage() {
       if (event.target.innerText == "The Continental") { alert("right answer"); score += 10; }
       scoreCard.innerHTML = `Score: ${score}`
   } else if (currentQuestion === 10) {
+
       button1.style.display = 'none'
       button2.style.display = 'none'
       button3.style.display = 'none'
@@ -127,17 +127,17 @@ function changePage() {
       
       
       headerNumber.innerHTML = "";
-    
       button1.innerHTML = "test "
       button2.innerHTML ="test"
       button3.innerHTML = "test3"
       button4.innerHTML = "test4"
+    
       if (event.target.innerText == "test3") { alert("right answer"); score += 10; }
-    scoreCard.innerHTML = `Score: ${score}`
-      
-    if (score < 50) { question.innerHTML = `Ouch! You scored ${score} , Go home and watch some Netflix`; photoContainer.src = "img/tuff.gif"}
-    if (score >= 50 && score < 80) { question.innerHTML = `Ok! You kinda know your stuff. You scored ${score}.`; photoContainer.src = "img/notbad.gif" }
-    if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
+      scoreCard.innerHTML = `Score: ${score}`
+      scoreCard.style.display = "none" 
+      if (score < 50) { question.innerHTML = `Ouch! You scored ${score} , Go home and watch some Netflix`; photoContainer.src = "img/tuff.gif"}
+      if (score >= 50 && score < 80) { question.innerHTML = `Ok! You kinda know your stuff. You scored ${score}.`; photoContainer.src = "img/notbad.gif" }
+      if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
   } 
   
   console.log(score)

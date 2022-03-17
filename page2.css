@@ -68,3 +68,10 @@ h2 {
 .last2 {
   text-align: center;
 }
+@media screen and (min-width: 700px) {
+  .multipleChoice:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 4px 1px cornflowerblue;
+  }
+}
