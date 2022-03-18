@@ -33,7 +33,7 @@ function changePage() {
     button3.innerHTML = "Vin Diesel"
     button4.innerHTML = "Andrew Garfield"
 
-    if (event.target.innerText == "Vin Diesel") { alert("right answer"); score += 10}
+    if (event.target.innerText == "Vin Diesel") { alert("You Got It: +10 Points"); score += 10}
     currentQuestion - 1
     scoreCard.innerHTML = `Score: ${score}`
     
@@ -47,7 +47,7 @@ function changePage() {
     button3.innerHTML = "1 Sun"
     button4.innerHTML = "2 Suns"
 
-    if (event.target.innerText == "3 Suns") { alert("right answer"); score+=10 }
+    if (event.target.innerText == "3 Suns") { alert("You Got It: +10 Points"); score+=10 }
     scoreCard.innerHTML = `Score: ${score}`
   
   } else if (currentQuestion === 3) {
@@ -60,7 +60,7 @@ function changePage() {
     button3.innerHTML = "9 Movies"
     button4.innerHTML = "14 Movies"
 
-    if (event.target.innerText == "14 Movies") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "14 Movies") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 4) {
     headerNumber.innerHTML = "Question 5";
@@ -72,7 +72,7 @@ function changePage() {
     button3.innerHTML = "Kenny"
     button4.innerHTML = "Towelie"
 
-    if (event.target.innerText == "Cartman") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "Cartman") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 5) {
     headerNumber.innerHTML = "Question 6";
@@ -84,7 +84,7 @@ function changePage() {
     button3.innerHTML = "Neo"
     button4.innerHTML = "Cypher"
 
-    if (event.target.innerText == "Neo") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "Neo") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 6) {
     headerNumber.innerHTML = "Question 7";
@@ -96,7 +96,7 @@ function changePage() {
     button3.innerHTML = "Avatar"
     button4.innerHTML = "Star Wars: Episode VII"
 
-    if (event.target.innerText == "The Titanic") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "The Titanic") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 7) {
     headerNumber.innerHTML = "Question 8";
@@ -107,7 +107,7 @@ function changePage() {
     button2.innerHTML ="The Estes Hotel"
     button3.innerHTML = "The Stan Hotel"
     button4.innerHTML = "The Shining Hotel"
-    if (event.target.innerText == "The Stan Hotel") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "The Stan Hotel") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 8) {
     headerNumber.innerHTML = "Question 9";
@@ -119,7 +119,7 @@ function changePage() {
     button3.innerHTML = "6 Seasons"
     button4.innerHTML = "7 Seasons"
 
-    if (event.target.innerText == "4 Seasons") { alert("right answer"); score += 10 }
+    if (event.target.innerText == "4 Seasons") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
   }else if (currentQuestion === 9) {
       headerNumber.innerHTML = "Question 10";
@@ -130,7 +130,7 @@ function changePage() {
       button3.innerHTML = "The Continental"
     button4.innerHTML = "The Underground"
     
-      if (event.target.innerText == "The Continental") { alert("right answer"); score += 10; }
+      if (event.target.innerText == "The Continental") { alert("You Got It: +10 Points"); score += 10; }
       scoreCard.innerHTML = `Score: ${score}`
   } else if (currentQuestion === 10) {
 
