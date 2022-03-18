@@ -12,6 +12,7 @@ let correctAnswer1 = "The Red-Lipped Batfish"
 let scoreCard = document.querySelector(".scorecard")
 let finalScore = document.querySelector(".finalScore")
 let choiceBox = document.querySelector(".choiceBox")
+
 photoContainer.src = "img/breakingbad.JPG"
 
 button1.addEventListener("click", changePage)
@@ -51,6 +52,7 @@ function changePage() {
     scoreCard.innerHTML = `Score: ${score}`
   
   } else if (currentQuestion === 3) {
+
     headerNumber.innerHTML = "Question 4";
     question.innerHTML = "It started with street racing and somehow made it's way to space. How many Fast and Furious Movies have been made?"
     photoContainer.src = "img/ff.jpg"
@@ -62,7 +64,8 @@ function changePage() {
 
     if (event.target.innerText == "14 Movies") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
-  }else if (currentQuestion === 4) {
+  } else if (currentQuestion === 4) {
+    
     headerNumber.innerHTML = "Question 5";
     question.innerHTML = "This South Park character had died over 100 times throughout the show. Which character is it?"
     photoContainer.src = "img/sp.jpg.webp"
@@ -74,6 +77,7 @@ function changePage() {
 
     if (event.target.innerText == "Cartman") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
+
   }else if (currentQuestion === 5) {
     headerNumber.innerHTML = "Question 6";
     question.innerHTML = "What is the name of Laurence Fishburne's character in the matrix?"
@@ -86,6 +90,7 @@ function changePage() {
 
     if (event.target.innerText == "Neo") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
+
   }else if (currentQuestion === 6) {
     headerNumber.innerHTML = "Question 7";
     question.innerHTML = "What is the highest grossing movie of all time?"
@@ -98,6 +103,7 @@ function changePage() {
 
     if (event.target.innerText == "The Titanic") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
+
   }else if (currentQuestion === 7) {
     headerNumber.innerHTML = "Question 8";
     question.innerHTML = "In The Shining, what was the name of the hotel in the movie?"
@@ -109,6 +115,7 @@ function changePage() {
     button4.innerHTML = "The Shining Hotel"
     if (event.target.innerText == "The Stan Hotel") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
+
   }else if (currentQuestion === 8) {
     headerNumber.innerHTML = "Question 9";
     question.innerHTML = "How many seasons of The Sopranos aired on HBO?"
@@ -121,6 +128,7 @@ function changePage() {
 
     if (event.target.innerText == "4 Seasons") { alert("You Got It: +10 Points"); score += 10 }
     scoreCard.innerHTML = `Score: ${score}`
+
   }else if (currentQuestion === 9) {
       headerNumber.innerHTML = "Question 10";
       question.innerHTML = "In the John Wick Movies, what is the name of the hotel chain that is known as a safehaven for Hitmen? "
@@ -128,11 +136,12 @@ function changePage() {
       button1.innerHTML = "The Hilton"
       button2.innerHTML ="The Haven"
       button3.innerHTML = "The Continental"
-    button4.innerHTML = "The Underground"
+      button4.innerHTML = "The Underground"
     
       if (event.target.innerText == "The Continental") { alert("You Got It: +10 Points"); score += 10; }
-      scoreCard.innerHTML = `Score: ${score}`
-  } else if (currentQuestion === 10) {
+     scoreCard.innerHTML = `Score: ${score}`
+    
+  }else if (currentQuestion === 10) {
 
       button1.style.display = 'none'
       button2.style.display = 'none'
@@ -149,14 +158,12 @@ function changePage() {
       if (event.target.innerText == "test3") { alert("right answer"); score += 10; }
       scoreCard.innerHTML = `Score: ${score}`
       scoreCard.style.display = "none" 
+    
       if (score < 50) { question.innerHTML = `Ouch! You scored ${score} , Go home and watch some Netflix`; photoContainer.src = "img/tuff.gif"}
       if (score >= 50 && score < 80) { question.innerHTML = `Ok! You kinda know your stuff. You scored ${score}.`; photoContainer.src = "img/notbad.gif" }
       if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
   } 
   
- 
   currentQuestion++
-  
- 
  
 }
