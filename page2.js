@@ -154,9 +154,9 @@ function changePage() {
       if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
   } 
   
-  console.log(score)
+ 
   currentQuestion++
-  console.log(currentQuestion)
+  
  
  
 }
