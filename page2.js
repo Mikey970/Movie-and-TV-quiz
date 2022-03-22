@@ -14,14 +14,14 @@ let finalScore = document.querySelector(".finalScore")
 let choiceBox = document.querySelector(".choiceBox")
 
 photoContainer.src = "img/breakingbad.JPG"
-
+//the buttons I selected 
 button1.addEventListener("click", changePage)
 button2.addEventListener("click", changePage)
 button3.addEventListener("click", changePage)
 button4.addEventListener("click", changePage)
 
 
-
+//function to change page
 function changePage() {
   if (currentQuestion == 1) {
     
@@ -33,7 +33,8 @@ function changePage() {
     button2.innerHTML = "Paul Rudd"
     button3.innerHTML = "Vin Diesel"
     button4.innerHTML = "Andrew Garfield"
-
+//the program checks the correct answer by using the current questions answer that is in the correct spot of the last answer. 
+    //This is because the buttons refresh before the question does
     if (event.target.innerText == "Vin Diesel") { alert("You Got It: +10 Points"); score += 10}
     currentQuestion - 1
     scoreCard.innerHTML = `Score: ${score}`
@@ -158,12 +159,12 @@ function changePage() {
       if (event.target.innerText == "test3") { alert("right answer"); score += 10; }
       scoreCard.innerHTML = `Score: ${score}`
       scoreCard.style.display = "none" 
-    
+    //final score check
       if (score < 50) { question.innerHTML = `Ouch! You scored ${score} , Go home and watch some Netflix`; photoContainer.src = "img/tuff.gif"}
       if (score >= 50 && score < 80) { question.innerHTML = `Ok! You kinda know your stuff. You scored ${score}.`; photoContainer.src = "img/notbad.gif" }
       if (score >= 80) { question.innerHTML = `Nice, You killed it. You know your stuff! Your final score is ${score}`; photoContainer.src = "img/perfect.gif"}
   } 
-  
+  //Add one to the current question
   currentQuestion++
  
 }
